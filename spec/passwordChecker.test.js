@@ -34,6 +34,11 @@ it('should return false if password contains "IPL" in any case', function () {
   expect(result).toBe(false);
 });
 
+it('should return true if password passes all tests', function () {
+  const main = new Main();
+  const result = main.validatePassword('Password1@!');
+  expect(result).toBe(true);
+});
 
 
 
