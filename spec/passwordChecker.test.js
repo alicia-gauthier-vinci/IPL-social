@@ -28,6 +28,12 @@ it('should return true if password does not contain "IPL"', function () {
   expect(result).toBe(true);
 });
 
+it('should return false if password contains "IPL" in any case', function () {
+  const main = new Main();
+  const result = main.validatePassword('PasswordIPL1@!');
+  expect(result).toBe(false);
+});
+
 
 
 
